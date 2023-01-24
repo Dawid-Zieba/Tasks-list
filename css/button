@@ -4,11 +4,8 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 8px;
+    width: 100%;
   }
-}
-
-.buttons {
-  width: 100%;
 }
 
 .buttons__button {

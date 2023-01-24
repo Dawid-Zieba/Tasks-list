@@ -2,6 +2,8 @@
     margin: 10px 0;
     background: white;
     box-shadow: 0 0 5px #ddd;
+    max-width: 900px;
+    align-items: center;
 }
 
 .section__header {
@@ -9,8 +11,14 @@
     padding: 20px;
     margin: 0;
     border-bottom: 1px solid #ddd;
+    align-items: center;
 }
 
 .section__body {
     padding: 20px;
+}
+
+.section__title {
+    font-size: 20px;
+    margin: 0;
 }

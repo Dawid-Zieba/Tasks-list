@@ -1,6 +1,7 @@
 .tasks {
     margin: 0;
     list-style: none;
+    padding: 0;
 }
 
 .tasks__button {
@@ -19,7 +20,6 @@
 
 .tasks__button--done {
     background: #0de70d;
-    transition: 1.4s;
 }
 
 .tasks__button--remove {

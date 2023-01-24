@@ -1,43 +1,38 @@
 .form {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    flex-direction: column;
-    background-color: white;
-  }
-  
-  .form__heading {
-    padding: 0 0 16px 16px;
-    border-bottom: 2px solid whitesmoke;
-  }
-  
-  .form__interface {
-    margin: 0 16px 16px 16px;
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 16px;
+    grid-gap: 20px;
+    padding: 20px;
   }
   
   @media (max-width: 767px) {
-    .form__interface {
+    .form {
+      grid-template-columns: 1fr;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
     }
   }
   
-  .form__input {
-    padding: 8px 12px;
-    border: 2px solid whitesmoke;
+  .form__newTask {
+    border: 2px solid #ddd;
+    padding: 10px;
+    width: 100%;
   }
   
   .form__button {
-    padding: 8px 16px;
-    background-color: teal;
+    padding: 15px;
+    background: teal;
     color: white;
     border: none;
     cursor: pointer;
   }
   
   .form__button:hover {
-    background-color: hsl(180, 100%, 30%);
+    background: hsl(180, 100%, 35%);
+  }
+  
+  @media (max-width: 767px) {
+    .form__button {
+      width: 100%;
+    }
   }

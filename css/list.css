@@ -1,0 +1,50 @@
+.list {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.list__item {
+    margin: 20px;
+    border-bottom: solid 2px #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.list__item--hidden {
+    margin: 0;
+    border-bottom: none;
+}
+
+.list__text {
+    flex-grow: 1;
+}
+
+.list__text--done {
+    text-decoration: line-through;
+}
+
+.list__button {
+    width: 35px;
+    height: 35px;
+    background-color: green;
+    border: none;
+    margin: 10px;
+    flex-shrink: 0;
+    font-size: 20px;
+    color: white;
+    transition: background 1s;
+}
+
+.list__button:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+
+.list__button--remove {
+    background-color: red;
+}
+
+.list__button--remove:hover {
+    background-color: hsl(0, 100%, 60%);
+}

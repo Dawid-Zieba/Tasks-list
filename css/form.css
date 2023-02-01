@@ -1,38 +1,35 @@
 .form {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 20px;
-    padding: 20px;
-  }
-  
-  @media (max-width: 767px) {
-    .form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .form {
       grid-template-columns: 1fr;
-      display: flex;
-      flex-wrap: wrap;
-    }
+      grid-row-gap: 15px;
   }
-  
-  .form__newTask {
-    border: 2px solid #ddd;
-    padding: 10px;
-    width: 100%;
-  }
-  
-  .form__button {
-    padding: 15px;
-    background: teal;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .form__button:hover {
-    background: hsl(180, 100%, 35%);
-  }
-  
-  @media (max-width: 767px) {
-    .form__button {
-      width: 100%;
-    }
-  }
+}
+
+.form__input {
+  padding: 8px;
+  border: solid 2px #e0e0e0;
+}
+
+.form__button {
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  transition: background 1s, transform 0.5s;
+}
+
+.form__button:hover {
+  background-color: hsl(180, 100%, 30%);
+  transform: scale(1.1);
+}
+
+.form__button:active {
+  background-color: hsl(180, 100%, 35%);
+}
